@@ -12,7 +12,6 @@
 
 .header {
     --bg-image: url(../images/cover-image-dark.png);
-
     position: relative;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -212,6 +211,11 @@
     text-shadow: 2px 2px var(--accent-color, #ff0070);
 }
 
+.link {
+    text-decoration: none;
+    text-shadow: 2px 2px var(--accent-color, #ff0070);
+}
+
 .article__link:hover {
     border-block-end: 1px solid var(--text-color);
 }
@@ -236,7 +240,7 @@
     text-shadow: 2px 2px #ff0070;
 }
 
-@media (width >= 768px) {
+@media (width >=768px) {
     .header {
         padding-inline: 20px;
     }
@@ -312,9 +316,9 @@
     .list-images {
         display: grid;
         grid-template-areas:
-      'sunset sunset ice-cream'
-      'tape books ice-cream'
-      'tape street street';
+            'sunset sunset ice-cream'
+            'tape books ice-cream'
+            'tape street street';
         gap: 20px;
     }
 
@@ -343,7 +347,7 @@
     }
 }
 
-@media (width >= 1024px) {
+@media (width >=1024px) {
     .header__theme-menu {
         align-self: start;
         justify-self: center;
